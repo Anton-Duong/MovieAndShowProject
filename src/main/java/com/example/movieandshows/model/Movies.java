@@ -7,8 +7,9 @@ import lombok.Setter;
 @Entity
 @IdClass(UserEmbeddedID.class)
 public class Movies {
-    @EmbeddedId
-    private UserEmbeddedID movieIdentifier;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long movieId;
 
     @Getter
     @Setter
