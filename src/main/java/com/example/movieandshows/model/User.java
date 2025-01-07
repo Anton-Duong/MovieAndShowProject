@@ -1,4 +1,4 @@
-package com.example.movieandshows.controller;
+package com.example.movieandshows.model;
 
 import jakarta.persistence.Entity;
 

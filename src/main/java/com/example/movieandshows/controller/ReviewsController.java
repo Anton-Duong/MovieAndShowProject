@@ -1,4 +1,4 @@
 package com.example.movieandshows.controller;
 
-public class Movies {
+public class ReviewsController {
 }
