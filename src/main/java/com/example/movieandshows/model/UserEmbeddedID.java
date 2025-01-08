@@ -1,17 +1,18 @@
 package com.example.movieandshows.model;
 
+import jakarta.persistence.Embeddable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity
-public class UserEmbeddedID {
-  @Id
+import java.io.Serializable;
+
+@Embeddable
+public class UserEmbeddedID implements Serializable {
   @Getter
   @Setter
   private String email;
-  @Id
   @Getter
   @Setter
   private String username;

@@ -7,7 +7,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@IdClass(UserEmbeddedID.class)
 public class User {
   @EmbeddedId
   UserEmbeddedID userIdentifier;

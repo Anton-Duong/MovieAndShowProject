@@ -5,7 +5,9 @@ import com.example.movieandshows.model.UserEmbeddedID;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface UserRepository extends CrudRepository<User, UserEmbeddedID> {
-  User findbyIdOrEmail(UserEmbeddedID userUnique);
+  Optional<User> findByUserIdentifier_Email(String email);
+  Optional<User> findByUserIdentifier_Username(String username);
 }
