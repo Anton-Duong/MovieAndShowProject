@@ -19,5 +19,4 @@ public class User {
   @Getter
   @Setter
   private int age;
-
 }
