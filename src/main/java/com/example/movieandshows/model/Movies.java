@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@IdClass(UserEmbeddedID.class)
 public class Movies {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,8 +19,9 @@ public class Movies {
     private int duration;
 
     @ManyToOne
-    @JoinColumn(name = "review_id", referencedColumnName = "id")
+    @JoinColumn(name = "review_id", referencedColumnName = "reviewId")
     @Getter
     @Setter
     private Reviews review;
+
 }

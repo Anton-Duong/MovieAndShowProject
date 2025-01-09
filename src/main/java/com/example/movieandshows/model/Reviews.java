@@ -17,4 +17,5 @@ public class Reviews {
     @Getter
     @Setter
     private int rating;
+
 }
